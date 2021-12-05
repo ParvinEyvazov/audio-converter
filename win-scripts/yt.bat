@@ -1,1 +1,1 @@
-doskey youtube-dl=docker run --rm -i -t -v cd:/data vimagick/youtube-dl
+DOSKEY youtube-dl=docker run --rm -i -t -v "%cd%:/data" vimagick/youtube-dl $*
