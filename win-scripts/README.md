@@ -21,3 +21,10 @@ youtube-dl
 ```
 
 Thanks [youtube-dl](https://github.com/ytdl-org/youtube-dl) for this awesome project.
+
+
+### Using ffmpeg
+
+```bash
+ffmpeg -i "video.mp4" -f mp3 -ab 192000 -vn music.mp3
+```

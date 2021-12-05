@@ -1,0 +1,1 @@
+DOSKEY ffmpeg=docker run --rm -i -t -v "%cd%:/tmp/workdir" jrottenberg/ffmpeg $*
