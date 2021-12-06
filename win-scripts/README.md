@@ -28,3 +28,8 @@ Thanks [youtube-dl](https://github.com/ytdl-org/youtube-dl) for this awesome pro
 ```bash
 ffmpeg -i "video.mp4" -f mp3 -ab 192000 -vn music.mp3
 ```
+
+### Creating stream pipe between youtube-dl and ffmpeg
+```bash
+youtube-dl <video_link> -o- | ffmpeg -i / -f mp3 -ab 96000 -vn -
+```
