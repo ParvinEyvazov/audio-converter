@@ -10,11 +10,11 @@ import (
 )
 
 func main() {
-	listenAddr := os.Getenv("LISTEN_ADDRESS")
-	addr := listenAddr + `:` + os.Getenv("PORT")
+	// listenAddr := os.Getenv("LISTEN_ADDRESS")
+	// addr := listenAddr + `:` + os.Getenv("PORT")
 
-	// listenAddr := `localhost`
-	// addr := listenAddr + `:8080`
+	listenAddr := `localhost`
+	addr := listenAddr + `:8080`
 
 	http.HandleFunc("/watch", stream)
 	log.Printf("Server started at: %s", addr)
